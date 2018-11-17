@@ -157,7 +157,7 @@ VBoxManage setextradata "${vmname}" \
 VBoxManage setextradata "${vmname}" \
  "VBoxInternal2/EfiGraphicsResolution" "${resolution}"
 VBoxManage setextradata "${vmname}" \
- "VBoxInternal/Devices/efi/0/Config/DmiSystemSerial" "${serialnumber}"
+ "VBoxInternal/Devices/efi/0/Config/DmiSystemSerial" "string:${serialnumber}"
 
 # sterr back
 exec 2>/dev/tty
